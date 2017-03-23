@@ -121,19 +121,6 @@ public class Visit extends BaseEntity {
     public void setPetId(Integer petId) {
         this.petId = petId;
     }
-    
-    @OneToOne(fetch = FetchType.LAZY)
-    private Bill bill;
-
-
-	public Bill getBill() {
-		return bill;
-	}
-
-
-	public void setBill(Bill bill) {
-		this.bill = bill;
-	}
 
 
 	@Override
